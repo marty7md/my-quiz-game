@@ -1,31 +1,51 @@
-(styles.css) */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
+    direction: rtl;
+    text-align: center;
 }
-#quiz-container {
-    width: 50%;
-    margin: auto;
-    background: #004d00; /* أخضر داكن */
+
+header {
+    background-color: #00796b;
     color: white;
     padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#question-container {
+    background-color: white;
+    margin-top: 30px;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-button {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
+
+#answers {
+    list-style: none;
+    padding: 0;
+}
+
+.answer {
+    background-color: #4caf50;
+    color: white;
     padding: 10px;
-    font-size: 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+    font-size: 18px;
 }
-.correct {
-    background-color: green;
-    color: white;
+
+.answer:hover {
+    background-color: #45a049;
 }
-.wrong {
-    background-color: red;
-    color: white;
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }

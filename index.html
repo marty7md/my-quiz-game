@@ -1,19 +1,29 @@
+<!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لعبة الأسئلة الكروية</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>أسئلة ثقافية</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="quiz-container">
-        <h1>لعبة الأسئلة الكروية</h1>
-        <p id="question">تحميل السؤال...</p>
-        <div id="options"></div>
-        <p id="score">النتيجة: 0</p>
-        <button id="restart" onclick="restartGame()" style="display:none;">إعادة اللعب</button>
+    <header>
+        <h1>أسئلة ثقافية</h1>
+        <p>اختبر معلوماتك الآن!</p>
+    </header>
+
+    <div id="question-container">
+        <p id="question-text">ما هي عاصمة مصر؟</p>
+        <ul id="answers">
+            <li><button class="answer" onclick="checkAnswer(1)">القاهرة</button></li>
+            <li><button class="answer" onclick="checkAnswer(2)">الرياض</button></li>
+            <li><button class="answer" onclick="checkAnswer(3)">دمشق</button></li>
+            <li><button class="answer" onclick="checkAnswer(4)">بيروت</button></li>
+        </ul>
     </div>
-    
+
+    <div id="result"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
